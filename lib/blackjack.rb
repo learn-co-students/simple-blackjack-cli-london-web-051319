@@ -43,7 +43,7 @@ def hit?(card_total)
 end
 
 def invalid_command
-  # code invalid_command here
+  puts invalid command
 end
 
 #####################################################
@@ -55,11 +55,9 @@ def runner
   initial_round_value = initial_round
   new_card_total = hit?(initial_round_value)
   until new_card_total > 21
-    # puts "Your cards add up to #{new_card_total}"
       new_card_total = hit?(new_card_total)
   end
   display_card_total(new_card_total) 
   end_game(new_card_total)
-  # puts "Game over!"
 end 
     
