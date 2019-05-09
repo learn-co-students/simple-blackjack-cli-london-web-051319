@@ -1,13 +1,18 @@
 def welcome
   # code #welcome here
+  puts "Welcome to the Blackjack Table"
 end
 
-def deal_card
+def deal_card(number)
   # code #deal_card here
+  for number in 1..12 do
+    return number
+
 end
 
-def display_card_total
+def display_card_total(card_total)
   # code #display_card_total here
+  puts "Your cards add up to #{card_total}"
 end
 
 def prompt_user
@@ -41,4 +46,3 @@ end
 def runner
   # code runner here
 end
-    
